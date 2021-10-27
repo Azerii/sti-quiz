@@ -1,0 +1,15 @@
+{
+  "short_name": "STI Quiz",
+  "name": "STI Quiz",
+  "icons": [
+    {
+      "src": "pill.png",
+      "sizes": "199x179",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

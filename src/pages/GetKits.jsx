@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 
   .subHeading {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 36px;
     max-width: 56rem;
   }
