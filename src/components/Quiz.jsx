@@ -156,6 +156,7 @@ const Quiz = ({ setShowQuiz }) => {
       let step = 3;
       let i = 0;
       let arr = [];
+      let symptoms = allSelected.get(1);
 
       while (step < 8) {
         arr[i] = allSelected.get(step);
@@ -164,7 +165,12 @@ const Quiz = ({ setShowQuiz }) => {
         step++;
       }
 
-      if (arr.includes("Yes")) {
+      if (symptoms) {
+        console.log(symptoms);
+        if (!symptoms[7]) {
+          localStorage.setItem("atRisk", true);
+        }
+      } else if (arr.includes("Yes")) {
         localStorage.setItem("atRisk", true);
       } else {
         localStorage.setItem("atRisk", false);

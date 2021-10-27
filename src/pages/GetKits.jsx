@@ -6,6 +6,7 @@ import FormGroup from "components/FormGroup";
 import Button from "components/Button";
 import { useState } from "react";
 import { useEffect } from "react";
+// import { useDetectAdBlock } from "adblock-detect-react";
 
 const Wrapper = styled.div`
   position: relative;
@@ -127,6 +128,7 @@ const Message = styled.div`
 `;
 
 const GetKits = () => {
+  // const adBlockDetected = useDetectAdBlock();
   const [atRisk, setAtRisk] = useState(true);
 
   const handleSubmit = (e) => {
@@ -140,9 +142,14 @@ const GetKits = () => {
   };
 
   useEffect(() => {
+    // console.log(adBlockDetected);
+    // if (adBlockDetected) {
+    //   window.alert("ad block detected");
+    // }
+
     let tempAtRisk = localStorage.getItem("atRisk");
 
-    if (tempAtRisk === true) {
+    if (tempAtRisk === "true") {
       setAtRisk(true);
     } else {
       setAtRisk(false);
