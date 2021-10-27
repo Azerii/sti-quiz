@@ -67,7 +67,7 @@ const Wrapper = styled.div`
     }
 
     ol {
-      width: 100%;
+      width: 90%;
     }
 
     .medKit,
