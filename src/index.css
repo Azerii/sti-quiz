@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("./font/CircularStd-Book.eot");
+  src: local("./font/Circular Std Book"), local("CircularStd-Book"),
+    url("./font/CircularStd-Book.eot?#iefix") format("embedded-opentype"),
+    url("./font/CircularStd-Book.woff2") format("woff2"),
+    url("./font/CircularStd-Book.woff") format("woff"),
+    url("./font/CircularStd-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
 :root {
   --primary: #283b38;
   --secondary: #d6ede9;
@@ -10,6 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 html {
@@ -19,9 +33,9 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Circular Std Book", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -65,16 +79,6 @@ button:focus,
 select:focus,
 textarea:focus {
   outline: none;
-}
-
-select {
-  font-family: var(--font_regular);
-  appearance: none;
-}
-
-textarea {
-  font-family: var(--font_regular);
-  resize: none;
 }
 
 /* Chrome, Safari, Edge, Opera */

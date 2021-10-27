@@ -131,11 +131,11 @@ const GetKits = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    e.target.reset();
 
     document.querySelector(".successMessage").classList.add("open");
     setTimeout(() => {
       document.querySelector(".successMessage").classList.remove("open");
-      e.target.reset();
     }, 5000);
   };
 
@@ -156,12 +156,13 @@ const GetKits = () => {
     <Wrapper>
       <img src={med_kit} alt="Med kit illustration" className="medKit" />
 
-      <Message className="successMessage flexRow alignCenter justifyCenter open">
+      <Message className="successMessage flexRow alignCenter justifyCenter">
         <img src={cross_pattern} alt="Cross pattern" className="crossPattern" />
         <span className="description textCenter">
           {" "}
           Request Sent Successfully.
           <br />
+          <br className="mb" />
           We will begin processing your order and get back to you shortly
         </span>
       </Message>

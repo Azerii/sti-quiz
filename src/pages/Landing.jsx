@@ -1,11 +1,14 @@
+import React, { Suspense, lazy } from "react";
 import Button from "components/Button";
 import styled from "styled-components";
 import Spacer from "components/Spacer";
 import double_helix from "assets/double_helix.png";
 import cross_pattern from "assets/cross_pattern.png";
 import cross_pattern_mb from "assets/cross_pattern_mb.png";
-import Quiz from "components/Quiz";
 import { useState } from "react";
+import Loader from "components/Loader";
+
+const Quiz = lazy(() => import("../components/Quiz"));
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -132,7 +135,11 @@ const Landing = () => {
       </div>
 
       {/* Quiz */}
-      {showQuiz && <Quiz setShowQuiz={setShowQuiz} />}
+      {showQuiz && (
+        <Suspense fallback={<Loader />}>
+          <Quiz setShowQuiz={setShowQuiz} />
+        </Suspense>
+      )}
     </Wrapper>
   );
 };
