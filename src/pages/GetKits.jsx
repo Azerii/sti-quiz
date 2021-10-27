@@ -177,7 +177,7 @@ const GetKits = () => {
         )}
         {!atRisk && (
           <h4 className="subHeading">
-            You may not be at risk of getting a STi due to unprotected sex.
+            You may not be at risk of getting an STI due to unprotected sex.
             However, you may get infected by other means. You can still rule out
             any STI infection by requesting an at-home testing kit below:
           </h4>
