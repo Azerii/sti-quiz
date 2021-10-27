@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   left: 0;
   min-height: 100vh;
   width: 100vw;
-  background-color: #00000050;
+  background-color: #00000090;
   z-index: 10;
   height: 100vh;
   overflow: auto;
