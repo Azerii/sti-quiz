@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import check from "assets/check.png";
+import check from "assets/check.svg";
 
 const Wrapper = styled.div`
   pointer-events: none;

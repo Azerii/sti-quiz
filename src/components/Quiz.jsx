@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Options from "./Options";
 import Spacer from "./Spacer";
-import cancel from "assets/cancel.png";
-import arrow_left from "assets/arrow_left.png";
-import arrow_right from "assets/arrow_right.png";
+import cancel from "assets/cancel.svg";
+import arrow_left from "assets/arrow_left.svg";
+import arrow_right from "assets/arrow_right.svg";
 import { useState } from "react";
 import Button from "./Button";
 import { useHistory } from "react-router-dom";
@@ -39,7 +39,7 @@ const Card = styled.div`
     right: 4.8rem;
 
     .icon {
-      height: 2rem;
+      height: 1.2rem;
     }
   }
 
