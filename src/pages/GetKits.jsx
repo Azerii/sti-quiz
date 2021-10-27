@@ -177,6 +177,13 @@ const GetKits = () => {
       <div className="content">
         <Spacer y={9.6} />
         {atRisk && (
+          <h4 className="subHeading">
+            You may be at risk of getting an STI. You can rule out any STI
+            infection by requesting an at-home testing kit below:
+          </h4>
+        )}
+        <Spacer y={4.8} />
+        {atRisk && (
           <h1 className="heading">
             Request at-home discreet STI test <br />
             kits
